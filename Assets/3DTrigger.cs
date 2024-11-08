@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DTrigger : MonoBehaviour
+public class threeDTrigger : MonoBehaviour
 {
     public AudioSource Sound;
 
@@ -11,8 +11,9 @@ public class DTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Sound.spatialBlend = 0;
+        Sound.spatialBlend = 1;
     }
 
 
 }
+

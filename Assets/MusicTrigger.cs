@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class MusicTrigger : MonoBehaviour
 {
-    public AudioSource Jazz;
+    public AudioSource Sound;
     
 
     
     public void OnTriggerEnter(Collider other)
     {
-        Jazz.Pause();
+        Sound.Pause();
         
         
         //Jazz.spatialBlend = 1;
     }
     public void OnTriggerExit(Collider other)
     {
-        Jazz.Play();
+        Sound.Play();
     }
     
 
